@@ -30,6 +30,12 @@ DCMDUMP="./bin/dcmdump"
 CACHETEMP="/opt/cachetemp.cache"
 #---------------------------------------------------------
 
+#---------------------------------------------------------
+# DATABASE SQLITE E DRIVE SQLITE
+DRIVESQL=""
+DATABASE="/opt/database.sqlite"
+#---------------------------------------------------------
+
 while read -e linha || [ -n "$linha" ]; do
     if [ -e $linha ]; then
         if grep -q $linha $LOGSND; then
