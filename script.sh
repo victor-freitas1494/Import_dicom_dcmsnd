@@ -35,4 +35,4 @@ while read -e linha || [ -n "$linha" ]; do
         if grep -q $linha $LOGSND; then
             echo -e "$linha: DICOM Foi Enviado Para PACS"
         else
-            
+            date +'%Y/%m/%d' -d '20230116'
